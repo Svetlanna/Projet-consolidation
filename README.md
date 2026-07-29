@@ -92,3 +92,10 @@ Merise (MCD/MLD), Star Schema, DuckDB, Régression linéaire, Random Forest, Com
   Badges visés
 
 Data Engineer (ETL + DuckDB + pipeline reproductible), Data Architect (Merise + Star Schema), IA (scikit-learn, entraînement et évaluation de modèles).
+
+
+Projet disponible en ligne
+Application Streamlit déployée
+Dockerisation
+
+https://projet-consolidation.streamlit.app/
