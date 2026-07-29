@@ -13,8 +13,8 @@ from sklearn.metrics import mean_absolute_error, r2_score
 
 st.set_page_config(page_title="CO2 & Température en France", layout="wide")
 st.title("Impact du CO2 sur la température en France")
+con = duckdb.connect("../db/climat.duckdb", read_only=True)
 
-con = duckdb.connect("../db/climat.duckdb")
 df = con.execute("SELECT * FROM fait_climat ORDER BY annee").fetchdf()
 con.close()
 
