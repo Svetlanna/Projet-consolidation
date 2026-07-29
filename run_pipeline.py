@@ -22,7 +22,6 @@ for label, script in etapes:
 
 
 
-
 #
 print("\n=== Lancement du dashboard Streamlit ===")
 dossier_dashboard = os.path.join(BASE_DIR, "dashboard")
