@@ -81,6 +81,7 @@ correlation = df[["co2_ppm", "temp_anomaly_global", "co2_growth", "avg_temp_fran
 
 
 
+
 fig, ax = plt.subplots(figsize=(8, 6))
 sns.heatmap(correlation, annot=True, cmap="coolwarm", fmt=".2f", vmin=-1, vmax=1, ax=ax)
 st.pyplot(fig)
