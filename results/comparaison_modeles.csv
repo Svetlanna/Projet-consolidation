@@ -1,4 +1,4 @@
 Modele,MAE,RMSE,R2,Accuracy_0.5C,Temps_entrainement_s,Hyperparametres_reglables,Complexite_code,Facilite_reglage
 Regression lineaire,0.558,0.639,0.182,0.357,0.001,5,Faible,Très facile
-Random Forest,1.327,1.5,-3.5,0.214,0.0406,18,Faible,Facile
-Reseau de neurones MLP,1.583,1.766,-5.238,0.143,0.0879,24,Moyenne,Difficile
+Random Forest,1.327,1.5,-3.5,0.214,0.0396,18,Faible,Facile
+Reseau de neurones MLP,1.583,1.766,-5.238,0.143,0.084,24,Moyenne,Difficile
