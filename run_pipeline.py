@@ -6,8 +6,10 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 etapes = [
     ("ETL (nettoyage des données)", "etl.py"),
-    ("Chargement dans DuckDB", "load_db.py"),
-    ("Analyse + modèle ML", "model.py"),
+    ("chargement dans DuckDB", "load_db.py"),
+    ("Requêtes SQL", "requetes.py"),
+    ("Analyse + modèle ml", "model.py"),
+    ("Expériences MLflow", "experiences_mlflow.py"),
 ]
 
 for label, script in etapes:
@@ -19,7 +21,11 @@ for label, script in etapes:
         sys.exit(1)
 #
 
-
+print("\n=== Tests automatiques ===")
+resultat = subprocess.run([sys.executable, "-m", "pytest", "-q", "tests"], cwd=BASE_DIR)
+if resultat.returncode != 0:
+    print("Des tests échouent, arrêt du pipeline.")
+    sys.exit(1)
 
 
 #

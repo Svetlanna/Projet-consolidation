@@ -1,7 +1,10 @@
-pandas
-duckdb
-scikit-learn
-streamlit
+pandas>=2.0
+duckdb>=1.0
+scikit-learn>=1.4
+streamlit>=1.50
+plotly>=5.20
 matplotlib
 seaborn
 joblib
+mlflow>=3.0
+pytest
