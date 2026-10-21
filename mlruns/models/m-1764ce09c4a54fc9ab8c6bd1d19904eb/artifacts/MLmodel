@@ -1,0 +1,34 @@
+artifact_path: file:///C:/python-projs/consolidation/mlruns/models/m-1764ce09c4a54fc9ab8c6bd1d19904eb/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.14.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.9.0
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.17.1
+model_id: m-1764ce09c4a54fc9ab8c6bd1d19904eb
+model_size_bytes: 844
+model_uuid: m-1764ce09c4a54fc9ab8c6bd1d19904eb
+prompts: null
+run_id: aa8ff5853eba4cd0be2d08251cb4cf06
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "co2_ppm", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-10-21 07:30:24.260061'
